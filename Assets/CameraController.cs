@@ -29,7 +29,16 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.right * Time.deltaTime);
+        // transform.Translate(Vector3.right * Time.deltaTime);
+
+        if(Input.GetKeyDown(KeyCode.LeftArrow)){
+            Debug.Log("Moving camera left");
+            transform.Translate(Vector3.left);
+        }
+        if(Input.GetKeyDown(KeyCode.RightArrow)){
+            transform.Translate(Vector3.right);
+        }
+
         transform.LookAt(targetPlayer.transform);
 
     }
