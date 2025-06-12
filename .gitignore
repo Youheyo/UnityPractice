@@ -77,3 +77,6 @@ crashlytics-build.properties
 # Imported from store
 /[Aa]ssets/[Ii]mports/*
 /[Aa]ssets/[Ii]mports.meta
+
+
+.vscode/
